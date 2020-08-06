@@ -18,7 +18,7 @@ class Student
 
 
     def add_boating_test(first_name, status, instructor)
-      Boatingtest.new(self, first_name, status, instructor)
+      BoatingtTest.new(self, first_name, status, instructor)
     end
 
 
