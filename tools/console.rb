@@ -10,8 +10,8 @@ student2=Student.new("Jade")
 instructor1=Instructor.new("Sylwia")
 instructor2=Instructor.new("Eric")
 
-boattest1=Boatingtest.new(student1, "boating test name", "pass", instructor1)
-boattest2=Boatingtest.new(student2, "boating test name", "fail", instructor2)
+boattest1=BoatingTest.new(student1, "boating test name", "pass", instructor1)
+boattest2=BoatingTest.new(student2, "boating test name", "fail", instructor2)
 
 
 
