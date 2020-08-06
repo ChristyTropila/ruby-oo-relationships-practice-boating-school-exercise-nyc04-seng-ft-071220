@@ -1,14 +1,10 @@
   require 'pry'
- 
-
-  require_relative 'app/models/boatingtest.rb'
-  require_relative 'app/models/instructor.rb'
 
 class Student
 
     @@all=[]
 
-    attr_accessor 
+    attr_accessor
     attr_reader :first_name
 
     def initialize(name)
@@ -28,9 +24,3 @@ class Student
 
 
 end
-
-student=Student.new("spongebob")
-student.add_boating_test("bob", "failss", "test instructor")
-binding.pry 
-0
-
