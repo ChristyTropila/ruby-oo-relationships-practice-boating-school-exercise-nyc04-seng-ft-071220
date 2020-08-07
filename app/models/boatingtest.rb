@@ -1,7 +1,7 @@
 require 'pry'
   
-require_relative 'app/models/boatingtest.rb'
-require_relative 'app/models/instructor.rb'
+# require_relative 'app/models/boatingtest.rb'
+# require_relative 'app/models/instructor.rb'
 
 class BoatingTest
 

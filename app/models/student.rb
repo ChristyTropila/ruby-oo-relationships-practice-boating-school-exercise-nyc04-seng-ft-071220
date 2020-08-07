@@ -1,9 +1,6 @@
   require 'pry'
  
 
-  require_relative 'app/models/boatingtest.rb'
-  require_relative 'app/models/instructor.rb'
-
 class Student
 
     @@all=[]
@@ -22,15 +19,26 @@ class Student
 
 
     def add_boating_test(first_name, status, instructor)
-      Boatingtest.new(self, first_name, status, instructor)
+      BoatingTest.new(self, first_name, status, instructor)
     end
+
+    def all_instructors(name)
+        new_inst = BoatingTest.all.select { |info |
+          info.student == name
+           info.instructor
+        binding.pry
+        0
+      
+      }
+
+      new_inst
+    end
+
 
 
 
 end
 
-student=Student.new("spongebob")
-student.add_boating_test("bob", "failss", "test instructor")
-binding.pry 
-0
+# student=Student.new("spongebob")
+# student.add_boating_test("bob", "failss", "test instructor")
 
